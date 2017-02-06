@@ -54,4 +54,7 @@
 #define RTIMUCALDEFS_OCTAVE_CODE           "RTEllipsoidFit.m"
 #define RTIMUCALDEFS_OCTAVE_COMMAND        "octave RTEllipsoidFit.m"
 
+#define RTIMUCALDEFS_PYTHON_CODE           "EllipsoidFit.py"
+#define RTIMUCALDEFS_PYTHON_COMMAND        "python EllipsoidFit.py"
+
 #endif // RTIMUCALDEFS_H

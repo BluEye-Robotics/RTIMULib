@@ -269,7 +269,9 @@ void processEllipsoid()
     if (pid == 0) {
         //  child process
         chdir(ELLIPSOID_FIT_DIR);
-        execl("/bin/sh", "/bin/sh", "-c", RTIMUCALDEFS_OCTAVE_COMMAND, NULL);
+        //execl("/bin/sh", "/bin/sh", "-c", RTIMUCALDEFS_OCTAVE_COMMAND, NULL);
+	execl("/bin/sh", "/bin/sh", "-c", RTIMUCALDEFS_PYTHON_COMMAND, (char*)0);
+	
         printf("here");
         _exit(EXIT_FAILURE);
     } else if (pid < 0) {
